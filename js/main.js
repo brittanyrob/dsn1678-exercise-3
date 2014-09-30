@@ -1,5 +1,5 @@
-var theHeader = $('.sales');
-var theButton = $('.sales_details');// JavaScript Document
+var sales = $('.sales');
+var sales_details = $('.sales_details');// JavaScript Document
 
 var buttonClickHandler = function () {
 	var isActive = sales.attr('data-state');
