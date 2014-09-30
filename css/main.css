@@ -156,3 +156,7 @@ body {
 
   text-indent: 100%;
 }
+
+.sales[data-state="inactive"] {
+
+}
