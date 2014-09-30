@@ -51,11 +51,12 @@ body {
   text-align: center;
 }
 
-.sales {
+.sales [data-state="active"] {
   display: inline-block;
   padding: 1em;
   position: relative;
   width: 24em;
+  visibility: hidden;
 
   background-color: rgba(127, 219, 255, 0.6);
   border-radius: 1em;
@@ -87,6 +88,7 @@ body {
   padding: 2em;
   position: absolute;
   width: 90%;
+  visibility: visible;
 
   background-color: #000;
   border-radius: 6px;
@@ -155,8 +157,4 @@ body {
   background: #555;
 
   text-indent: 100%;
-}
-
-.sales[data-state="active"] {
-
 }
