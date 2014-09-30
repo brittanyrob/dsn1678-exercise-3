@@ -51,16 +51,19 @@ body {
   text-align: center;
 }
 
-.sales [data-state="active"] {
+.sales  {
   display: inline-block;
   padding: 1em;
   position: relative;
   width: 24em;
-  visibility: hidden;
 
   background-color: rgba(127, 219, 255, 0.6);
   border-radius: 1em;
   cursor: pointer;
+}
+
+.sales[data-state="inactive"] {
+	visibility: hidden;
 }
 
 .sales__title {
@@ -88,10 +91,13 @@ body {
   padding: 2em;
   position: absolute;
   width: 90%;
-  visibility: visible;
 
   background-color: #000;
   border-radius: 6px;
+}
+
+.sales__details[data-state="inactive"] {
+	visibility: visible;
 }
 
 .sales__details::before {
@@ -158,3 +164,4 @@ body {
 
   text-indent: 100%;
 }
+
