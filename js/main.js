@@ -1,5 +1,5 @@
 var sales = $('.sales');
-var sales_details = $('.sales_details');// JavaScript Document
+var sales__details = $('.sales__details');// JavaScript Document
 
 var buttonClickHandler = function () {
 	var isActive = sales.attr('data-state');
@@ -10,4 +10,4 @@ var buttonClickHandler = function () {
 	}
 };
 
-sales_details.on('click', buttonClickHandler);
+sales__details.on('click', buttonClickHandler);
